@@ -35,7 +35,7 @@ header {
 
 .form-container {
     margin: 10px;
-    padding: 50px;
+    padding: 50px 25px;
     background: white;
     label {
         padding-right: 10px;
@@ -51,6 +51,9 @@ header {
         &:focus {
             border-bottom: 1px solid $basic-blue;
         }
+    }
+    @media screen and (min-width: 768px) {
+        padding: 50px;
     }
 }
 
