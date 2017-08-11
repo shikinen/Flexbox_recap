@@ -1,31 +1,31 @@
+//////////////// VARIABLES ////////////////
 $basic-gray: gray;
 $basic-blue: #1571E6;
-$main-font: 'Saira Semi Condensed', sans-serif;
-///////////////////////////////
+$main-font: 'Saira Semi Condensed',
+sans-serif;
+$tablet: screen and (min-width: 768px);
 
-html, body {
+/*============ GENERAL ============*/
+
+html,
+body {
     margin: 0;
-}
-* {
-    box-sizing: border-box;
+    height: 100%;
 }
 
 html {
     background: linear-gradient(90deg, aqua, $basic-blue);
     background-repeat: no-repeat;
-    height: 100%;
-    font-family: $main-font;
 }
 
-header {
-    text-align: center;
-    color: white;
-    h1 {
-        font-size: 2rem;
-        @media screen and (min-width: 756px) {
-            font-size: 3rem;
-        }
-    }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    min-height: 100%;
+    position: relative;
 }
 
 .container {
@@ -33,9 +33,26 @@ header {
     margin: 20px auto;
 }
 
+
+/*============ HEADER ============*/
+
+header {
+    text-align: center;
+    color: white;
+    h1 {
+        font-size: 2rem;
+        @media #{$tablet} {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+/*============ FORM ============*/
+
 .form-container {
     margin: 10px;
-    padding: 50px 25px;
+    padding: 50px 15px;
     background: white;
     label {
         padding-right: 10px;
@@ -52,7 +69,7 @@ header {
             border-bottom: 1px solid $basic-blue;
         }
     }
-    @media screen and (min-width: 768px) {
+    @media #{$tablet} {
         padding: 50px;
     }
 }
@@ -81,6 +98,29 @@ input[type="submit"] {
         background-color: $basic-blue;
         border: none;
         color: white;
-        cursor:pointer;
+        cursor: pointer;
+    }
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    img {
+        width: 30px;
+        height: 30px;
     }
 }
