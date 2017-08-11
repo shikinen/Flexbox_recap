@@ -2,6 +2,10 @@ $basic-gray: gray;
 $basic-blue: #1571E6;
 $main-font: 'Saira Semi Condensed', sans-serif;
 ///////////////////////////////
+
+html, body {
+    margin: 0;
+}
 * {
     box-sizing: border-box;
 }
@@ -17,7 +21,10 @@ header {
     text-align: center;
     color: white;
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+        @media screen and (min-width: 756px) {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -27,7 +34,7 @@ header {
 }
 
 .form-container {
-    padding-top: 50px;
+    margin: 10px;
     padding: 50px;
     background: white;
     label {
@@ -38,8 +45,11 @@ header {
         border-bottom: 1px solid lighten($basic-gray, 20%);
         transition: all 0.3s ease-in-out;
         outline: none;
-        &:focus {
+        &:hover {
             border-bottom: 1px solid aqua;
+        }
+        &:focus {
+            border-bottom: 1px solid $basic-blue;
         }
     }
 }
@@ -48,20 +58,26 @@ header {
     padding: 15px;
     display: flex;
     align-items: center;
+    input {
+        flex: 1;
+    }
     &:last-of-type {
         justify-content: center;
     }
 }
 
 input[type="submit"] {
+    flex: initial;
+    padding: 10px 70px;
     background-color: aqua;
     font-family: $main-font;
     font-size: 1em;
-    padding: 10px 50px;
-    transition: all 0.3s ease-in-out;
     border: none;
+    transition: all 0.3s ease-in-out;
     &:hover {
         background-color: $basic-blue;
+        border: none;
         color: white;
+        cursor:pointer;
     }
 }
