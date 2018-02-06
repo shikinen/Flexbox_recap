@@ -1,8 +1,7 @@
 //////////////// VARIABLES ////////////////
 $basic-gray: gray;
 $basic-blue: #1571E6;
-$main-font: 'Saira Semi Condensed',
-sans-serif;
+$main-font: 'Saira Semi Condensed', sans-serif;
 $tablet: screen and (min-width: 768px);
 
 /*============ GENERAL ============*/
@@ -80,6 +79,7 @@ header {
     align-items: center;
     input {
         flex: 1;
+        font-family: $main-font;
     }
     &:last-of-type {
         justify-content: center;
@@ -102,6 +102,9 @@ input[type="submit"] {
     }
 }
 
+
+/*============ FOOTER ============*/
+
 footer {
     position: absolute;
     right: 0;
@@ -119,8 +122,12 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100px;
+    a {
+        text-decoration: none;
+    }
     img {
         width: 30px;
         height: 30px;
+        border: none;
     }
 }
