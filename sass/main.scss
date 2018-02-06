@@ -19,18 +19,22 @@ html {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: $main-font;
-    min-height: 100%;
-    position: relative;
 }
 
-.container {
+.main-container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
+
 }
+
+
+
 
 
 /*============ HEADER ============*/
@@ -106,10 +110,7 @@ input[type="submit"] {
 /*============ FOOTER ============*/
 
 footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    margin-top: 200px;
     padding: 1rem;
     background-color: #fff;
     text-align: center;
