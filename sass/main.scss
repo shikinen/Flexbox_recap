@@ -41,8 +41,7 @@ main {
     margin: 0 auto;
 }
 /*============ MENU ============*/
-.menu-container {
-    color: $basic-blue;
+nav {
     background-color: #fff;
     padding: 20px;
     display: flex;
@@ -51,16 +50,17 @@ main {
     width: 100%;
 }
 
-.menu {
+.navbar {
+    color: $basic-blue;
     width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo {
+        height: 30px;
+    }
 }
 
-.menu-logo {
-    height: 30px;
-}
 
 .menu-links {
     display: flex;
