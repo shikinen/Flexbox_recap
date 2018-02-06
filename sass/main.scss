@@ -62,12 +62,12 @@ nav {
 }
 
 
-.menu-links {
+.navbar__links {
     display: flex;
     justify-content: flex-end;
 }
 
-.menu-login {
+.navbar__login {
     margin-left: 20px;
 }
 /*============ HEADER ============*/
@@ -85,7 +85,7 @@ nav {
         height: 100vh;
     }
 
-    .hero-text {
+    .hero__text {
         background: rgba(0, 0, 0, 0.8);
         padding: 0.5rem;
 
@@ -97,6 +97,7 @@ nav {
         }
     }
 }
+
 /*============ FORM ============*/
 .form-container {
     margin: 10px 15px;
