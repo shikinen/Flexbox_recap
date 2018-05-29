@@ -10,3 +10,9 @@ $working: lighten($light, 25%);
 $main_font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $regular: normal;
 $semibold: 600;
+
+// BREAKPOINTS
+
+$tablet: (min-width: 768px);
+$desktop: (min-width: 992px);
+$desktop-hd: (min-width: 1200px);
