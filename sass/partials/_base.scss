@@ -1,0 +1,20 @@
+html {
+    background-color: #fff;
+    color: $gray;
+    font-family: $main_font;
+    font-size: 18px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 1.5rem;
+}

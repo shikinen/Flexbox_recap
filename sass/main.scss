@@ -1,4 +1,9 @@
 // MODULES
-@import 'modules/base';
 @import 'modules/fonts';
 @import 'modules/variables';
+@import 'modules/flex';
+
+//PARTIALS
+
+@import 'partials/base';
+@import 'partials/nav';

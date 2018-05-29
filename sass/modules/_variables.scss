@@ -1,6 +1,12 @@
 // COLORS
-$gray: #464855;
-$light: #A7ABBD;
-$violet: #31187F;
 $aqua: #63EFFF;
+$gray: #464855;
+$light: lighten($gray, 40%);
+$violet: #31187F;
+$working: lighten($light, 25%);
 
+// FONTS
+
+$main_font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$regular: normal;
+$semibold: 600;

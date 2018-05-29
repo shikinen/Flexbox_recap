@@ -1,0 +1,26 @@
+.navbar {
+    background-color: $working;
+    color: $violet;
+    display: flex;
+    font-weight: $semibold;
+    justify-content: space-between;
+    @media (max-width: 500px) {
+    	flex-direction: column;
+    }
+}
+
+.navbar__logo {
+	background-color: blue;
+}
+
+.navbar__links {
+	background-color: red;
+    display: flex;
+    li {
+        margin-left: 2rem;
+        display: inline-block;
+        &:first-child {
+            margin: 0;
+        }
+    }
+}
