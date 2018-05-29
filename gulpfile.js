@@ -1,13 +1,13 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
-var sassOptions = {
+const sassOptions = {
     outputStyle: 'expanded'
-}
+};
 
-var input = 'sass/**/*.scss';
-var output = 'css/';
+const input = 'sass/**/*.scss';
+const output = 'css/';
 
 gulp.task('sass', function () {
     return gulp
@@ -21,7 +21,3 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('sass/**/*.scss', ['sass']);
 });
-
-
-
-

@@ -1,18 +1,23 @@
 {
   "name": "flexbox_recap",
   "version": "1.0.0",
-  "description": "#",
-  "main": "index.js",
+  "description": "flexbox",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikinen/Flexbox_recap.git"
+  },
+  "author": "Rafal Miodowski",
   "license": "ISC",
-  "dependencies": {
+  "bugs": {
+    "url": "https://github.com/shikinen/Flexbox_recap/issues"
+  },
+  "homepage": "https://github.com/shikinen/Flexbox_recap#readme",
+  "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "hover.css": "^2.2.0"
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.0"
   }
 }
