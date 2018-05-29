@@ -1,0 +1,23 @@
+.review-section {
+    padding: 100px 0;
+    background-image: url('../images/review_background.jpg');
+    background-position: center 2%;
+    background-size: cover;
+}
+
+.review {
+    background-color: rgba(49, 24, 127, 0.7);
+    border-radius: 10px;
+    color: #fff;
+    max-width: 30rem;
+    padding: 25px 50px;
+}
+
+.review__text {
+    padding: 20px 0;
+}
+
+.review__name {
+    font-size: 1rem;
+    text-align: right;
+}
