@@ -1,1 +1,20 @@
+@import 'variables';
 
+.button {
+    color: $violet;
+    border: 1px solid $violet;
+    display: block;
+    font-weight: $semibold;
+    padding: 1rem 2rem;
+    max-width: 10rem;
+    text-align: center;
+    will-change: transform;
+    transform-origin: center;
+    transition: all 0.2s;
+    white-space: nowrap;
+    &:hover {
+        transform: translateY(-8px);
+        color: $aqua;
+        border: 1px solid $aqua;
+    }
+}
