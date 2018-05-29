@@ -1,0 +1,15 @@
+.hero__main {
+    max-width: 26rem;
+    &>* {
+        margin-bottom: 2rem;
+    }
+}
+
+.hero__title {
+    color: $violet;
+    font-size: 2.5rem;
+    font-weight: $semibold;
+    line-height: 1;
+}
+
+.hero__text {}

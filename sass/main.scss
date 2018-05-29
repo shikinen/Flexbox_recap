@@ -1,9 +1,10 @@
 // MODULES
+@import 'modules/buttons';
 @import 'modules/fonts';
 @import 'modules/variables';
-@import 'modules/buttons';
 
 //PARTIALS
 
 @import 'partials/base';
+@import 'partials/hero';
 @import 'partials/nav';
