@@ -9,13 +9,19 @@ html {
 }
 
 .wrapper {
-    max-width: 1400px;
-    padding: 1.5rem;
+    width: 100%;
+}
+
+h2 {
+    color: $violet;
+    font-size: 2rem;
+    font-weight: $semibold;
 }
 
 .container {
     max-width: 960px;
-    margin: 4rem auto;
+    padding: 0 1.5rem;
+    margin: 5rem auto;
 }
 
 a {

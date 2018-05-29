@@ -17,7 +17,7 @@
 
 <body>
     <div class="wrapper">
-        <nav class="navbar">
+        <nav class="navbar content-padding">
             <img class="navbar__logo" src="images/logo.svg" width="75px" heigh="60px">
             <ul class="navbar__links">
                 <li class="navbar__shop"><a href="#">Shop</a></li>
@@ -46,6 +46,14 @@
             </aside>
         </header>
         <main>
+            <section class="email">
+                <div class="email__content container">
+                    <h2>
+                        Do you like what you see?
+                    </h2>
+                    <a class="button button_email" href="mailto:rafalmiodowski@gmail.com">Email me</a>
+                </div>
+            </section>
             <section class="products container">
                 <h2 class="section-title">
                     Products you may like
@@ -54,8 +62,8 @@
                     <div class="product">
                         <div class="product__information">
                             <h3 class="product__name">
-                            VR Gear
-                        </h3>
+                                VR Gear
+                            </h3>
                             <div class="product__reviews">
                             </div>
                             <div class="product__price">
@@ -67,15 +75,15 @@
                         </div>
                         <aside class="product__side">
                             <figure class="product__image">
-                                <img src="#" srcset="#" alt="Product photo" width="" height="">
+                                <img src="images/product.jpg" srcset="images/product.jpg 1x, images/product@2x.jpg 2x, images/product@3x.jpg 3x" alt="Product photo" title="Product photo" width="250px" height="150px">
                             </figure>
                         </aside>
                     </div>
                     <div class="product">
                         <div class="product__information">
                             <h3 class="product__name">
-                            VR Gear
-                        </h3>
+                                VR Gear
+                            </h3>
                             <div class="product__reviews">
                             </div>
                             <div class="product__price">
@@ -87,15 +95,15 @@
                         </div>
                         <aside class="product__side">
                             <figure class="product__image">
-                                <img src="#" srcset="" alt="Product photo" width="" height="">
+                                <img src="images/product.jpg" srcset="images/product.jpg 1x, images/product@2x.jpg 2x, images/product@3x.jpg 3x" alt="Product photo" title="Product photo" width="250px" height="150px">
                             </figure>
                         </aside>
                     </div>
                     <div class="product">
                         <div class="product__information">
                             <h3 class="product__name">
-                            VR Gear
-                        </h3>
+                                VR Gear
+                            </h3>
                             <div class="product__reviews">
                             </div>
                             <div class="product__price">
@@ -107,7 +115,7 @@
                         </div>
                         <aside class="product__side">
                             <figure class="product__image">
-                                <img src="#" srcset="#" alt="Product photo" width="" height="">
+                                <img src="images/product.jpg" srcset="images/product.jpg 1x, images/product@2x.jpg 2x, images/product@3x.jpg 3x" alt="Product photo" title="Product photo" width="250px" height="150px">
                             </figure>
                         </aside>
                     </div>
@@ -177,7 +185,9 @@
         <footer>
         </footer>
     </div>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
 </body>
 
 </html>

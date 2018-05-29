@@ -1,6 +1,8 @@
 .navbar {
     color: $violet;
     font-weight: $semibold;
+    padding: 0 1.5rem;
+    padding-top: 1rem;
     @media #{$tablet} {
         display: flex;
         justify-content: space-between;
@@ -31,7 +33,7 @@
     }
     a {
         display: block;
-        padding: 10px;
+        padding: 10px 0;
         &:hover {
             transition: 0.3s all;
             color: $aqua;
