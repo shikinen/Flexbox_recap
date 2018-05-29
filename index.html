@@ -2,66 +2,182 @@
 <html lang="pl-PL">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Flexbox">
+    <meta name="keywords" content="flexbox, frontend">
     <meta name="author" content="Rafał Miodowski">
     <meta name="viewport" content='width=device-width, initial-scale=1.0'>
     <title></title>
     <!-- favicon -->
     <link rel="" href="">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500,700&amp;subset=latin-ext" rel="stylesheet">
-
 </head>
 
 <body>
-    <nav>
-        <div class="navbar">
-            <img class="logo" src="img/awesome-logo.svg">
-            <div class="navbar__links">
-                <div class="navbar__signup"><a href="#">Sign Up</a></div>
-                <div class="navbar__login"><a href="#">Login</a></div>
+    <div class="wrapper">
+        <nav>
+            <div class="navbar">
+                <img class="logo" src="#">
+                <ul class="navbar__links">
+                    <li class="navbar__shop"><a href="#">Shop</a></li>
+                    <li class="navbar__about-us"><a href="#">About us</a></li>
+                    <li class="navbar__contact"><a href="#">Contact</a></li>
+                    <li class="navbar__contact"><a class="button_secondary" href="#">Ur account</a></li>
+                </ul>
             </div>
-        </div>
-    </nav>
-
-
-    <header class="hero">
-        <div class="hero__text">
-            <h1>Flexbox recap</h1>
-        </div>
-    </header>
-
-    <main>
-        <div class="form-container">
-            <form action="">
-                <div class="form-row">
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name" value="" placeholder="">
+        </nav>
+        <header class="hero">
+            <div class="hero__main">
+                <h1 class="hero__title">
+                    Create the best world <br>
+                    U could simply imagine.
+                </h1>
+                <p class="hero__text">
+                    Discover unlimited possibilities which VR/AR technologies and apps can bring into your life
+                </p>
+                <a class="button_primary" href="#">
+                    Discover U<sup>VR</sup>
+                </a>
+            </div>
+            <aside class="hero__side">
+                <figure class="hero__image">
+                    <img src="#" srcset="#" alt="Main VR graphic image" width="300" height="300">
+                </figure>
+            </aside>
+        </header>
+        <main>
+            <section class="products">
+                <h2 class="section-title">
+                    Products you may like
+                </h2>
+                <div class="products__row">
+                    <div class="product">
+                        <div class="product__information">
+                            <h3 class="product__name">
+                            VR Gear
+                        </h3>
+                            <div class="product__reviews">
+                            </div>
+                            <div class="product__price">
+                                <span class="upcase-text">starting price</span> $248.00
+                            </div>
+                            <div class="product__compare">
+                                Compare
+                            </div>
+                        </div>
+                        <aside class="product__side">
+                            <figure class="product__image">
+                                <img src="#" srcset="#" alt="Product photo" width="" height="">
+                            </figure>
+                        </aside>
+                    </div>
+                    <div class="product">
+                        <div class="product__information">
+                            <h3 class="product__name">
+                            VR Gear
+                        </h3>
+                            <div class="product__reviews">
+                            </div>
+                            <div class="product__price">
+                                <span class="upcase-text">starting price</span> $248.00
+                            </div>
+                            <div class="product__compare">
+                                Compare
+                            </div>
+                        </div>
+                        <aside class="product__side">
+                            <figure class="product__image">
+                                <img src="#" srcset="#" alt="Product photo" width="" height="">
+                            </figure>
+                        </aside>
+                    </div>
+                    <div class="product">
+                        <div class="product__information">
+                            <h3 class="product__name">
+                            VR Gear
+                        </h3>
+                            <div class="product__reviews">
+                            </div>
+                            <div class="product__price">
+                                <span class="upcase-text">starting price</span> $248.00
+                            </div>
+                            <div class="product__compare">
+                                Compare
+                            </div>
+                        </div>
+                        <aside class="product__side">
+                            <figure class="product__image">
+                                <img src="#" srcset="#" alt="Product photo" width="" height="">
+                            </figure>
+                        </aside>
+                    </div>
                 </div>
-                <div class="form-row">
-                    <label for="email">Your email:</label>
-                    <input type="email" id="email" value="" placeholder="">
+            </section>
+            <section class="review-section">
+                <div class="review">
+                    <div class="review__information">
+                        <h3 class="review__name">
+                        Rafał Miodowski
+                        </h3>
+                        <hr class="hr">
+                        <p class="review__text">
+                            Their products are simply awesome. I highly recommend gearing yourself up with UVR. They rock!
+                        </p>
+                    </div>
+                    <aside class="review__side">
+                        <figure class="avatar">
+                            <div class="avatar__shadow"></div>
+                            <img class="avatar__image" src="#" srcset="#" alt="Reviewer's photo" width="320" height="320">
+                        </figure>
+                    </aside>
                 </div>
-                <div class="form-row">
-                    <input type="submit" value="Submit">
+            </section>
+            <section class="contact">
+                <h2 class="section-title">
+                    Feel free to contact us!
+                </h2>
+                <div class="main-form">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="name">Your name:</label>
+                                <input name="name" type="text" id="name" value="">
+                            </div>
+                            <div class="form-col">
+                                <label for="email">Your email:</label>
+                                <input name="email" type="email" id="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" placeholder="message"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                    <div class="vcard">
+                        <p class="cn"><a class="url" href="#">U<sup>VR</sup> headquarters</a>
+                            <p>
+                                <p class="adr">
+                                    <span class="street-address">Random Street</span>
+                                    <br>
+                                    <span class="region">Virtualville</span>
+                                    <br>
+                                    <span class="postal-code">00-000</span>
+                                    <br>
+                                    <span class="country-name">Poland</span>
+                                </p>
+                                <p class="tel">+48 000 000 000</p>
+                                <p class="mail">rafalmiodowski@gmail.com</p>
+                    </div>
                 </div>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="social">
-            <a href="http://github.com/shikinen"><img src="img/github-logo.svg" alt="Github"></a>
-            <a href="https://linkedin.com/in/miodowski"><img src="img/linkedin-logo-1.svg" alt="LinkedIn"></a>
-        </div>
-        <small>Flexbox recap exercises 2017</small>
-    </footer>
-
-
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
 </body>
 
 </html>
