@@ -12,12 +12,6 @@ html {
     width: 100%;
 }
 
-h2 {
-    color: $violet;
-    font-size: 2rem;
-    font-weight: $semibold;
-}
-
 .container {
     max-width: 960px;
     padding: 0 1.5rem;
@@ -28,4 +22,19 @@ a {
     color: currentColor;
     cursor: pointer;
     text-decoration: none;
+}
+
+h2 {
+    color: $violet;
+    font-size: 2rem;
+    font-weight: $semibold;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.upcase-text {
+    text-transform: uppercase;
 }

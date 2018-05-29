@@ -1,1 +1,35 @@
-_products.scss
+.product {
+	display: flex;
+	flex-flow: column wrap;
+	max-width: 250px;
+	margin-bottom: 1rem;
+}
+
+.products__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	@media #{$tablet}{
+		justify-content: space-between;
+	}
+}
+
+.product__information {
+	margin-top: 1.5rem;
+	padding: 0 1.5rem;
+	order: 1;
+	&>* {
+		margin-bottom: 1rem;
+	}
+}
+.product__name {
+	font-weight: $semibold;
+}
+
+.product__price {
+	font-weight: $semibold;
+	span {
+		color: $light;
+		font-size: 16px;
+	}
+}
