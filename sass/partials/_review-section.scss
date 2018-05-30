@@ -7,7 +7,7 @@
 
 .review {
     background-color: rgba(49, 24, 127, 0.7);
-    @media #{$phone}{
+    @media #{$tablet}{
     	border-radius: 1rem;
     }
     color: #fff;
