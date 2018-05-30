@@ -7,7 +7,9 @@
 
 .review {
     background-color: rgba(49, 24, 127, 0.7);
-    border-radius: 1rem;
+    @media #{$phone}{
+    	border-radius: 1rem;
+    }
     color: #fff;
     max-width: 25rem;
     padding: 2rem 2rem;
