@@ -3,6 +3,5 @@ document.addEventListener('DOMContentLoaded', () => {
 		const navLinks = document.getElementById('navLinks');
 		console.log('działam!');
 		navLinks.className = (navLinks.className === 'navbar__links') ? 'navbar__links nav_visible' : 'navbar__links';
-
 	});
 });

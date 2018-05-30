@@ -5,8 +5,14 @@
 }
 .hero__main {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     &>* {
         margin-bottom: 2rem;
+    }
+    @media #{$tablet}{
+    	display: block;
     }
 }
 
@@ -19,6 +25,10 @@
 }
 
 .hero__title {
+	text-align: center;
+	@media #{$tablet} {
+		text-align: left;
+	}
     color: $violet;
     font-size: 2.5rem;
     font-weight: $semibold;
