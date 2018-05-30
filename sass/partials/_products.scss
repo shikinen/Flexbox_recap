@@ -1,8 +1,14 @@
 .product {
     display: flex;
+    flex-basis: 250px;
     flex-flow: column wrap;
-    max-width: 250px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    &:last-child {
+    	margin-bottom: 0;
+    }
+    @media #{$tablet} {
+    	margin-bottom: 0;
+    }
     padding: 1.5rem;
     transform-origin: center;
     transition: all 0.2s;

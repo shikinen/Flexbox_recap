@@ -7,18 +7,28 @@
 
 .review {
     background-color: rgba(49, 24, 127, 0.7);
-    border-radius: 10px;
+    border-radius: 1rem;
     color: #fff;
-    max-width: 30rem;
-    padding: 25px 50px;
-    margin: 0 1rem;
+    max-width: 25rem;
+    padding: 2rem 2rem;
+}
+
+.review__row {
+	display: flex;
+	align-items: center;
 }
 
 .review__text {
-    padding: 20px 0;
+    margin-bottom: 1rem;
 }
 
 .review__name {
     font-size: 1rem;
-    text-align: right;
 }
+
+.review__avatar {
+	border-radius: 40192px;
+	display: block;
+	margin-right: 1rem;
+}
+
