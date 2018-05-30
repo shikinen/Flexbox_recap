@@ -8,9 +8,11 @@
     <meta name="keywords" content="flexbox, frontend">
     <meta name="author" content="Rafał Miodowski">
     <meta name="viewport" content='width=device-width, initial-scale=1.0'>
-    <title></title>
+    <title>Flexbox in VR</title>
+    <script src="js/navbar-toggle.js"></script>
     <!-- favicon -->
     <link rel="" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/minireset.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,8 +20,11 @@
 <body>
     <div class="wrapper">
         <nav class="navbar content-padding">
-            <img class="navbar__logo" src="images/logo.svg" width="75px" heigh="60px">
-            <ul class="navbar__links">
+            <div class="navbar__top">
+                <img class="navbar__logo" src="images/logo.svg" width="75px" heigh="60px">
+                <a  id="navbarHamburger" class="navbar__hamburger" href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <ul id="navLinks" class="navbar__links">
                 <li class="navbar__shop"><a href="#">Shop</a></li>
                 <li class="navbar__about-us"><a href="#">About us</a></li>
                 <li class="navbar__contact"><a href="#">Contact</a></li>
@@ -134,50 +139,50 @@
                         </p>
                     </div>
                     <div class="review__row">
-                        <img class="review__avatar src="images/reviewer.jpg" srcset="images/reviewer.jpg 1x, images/reviewer@2x.jpg 2x, images/reviewer@3x.jpg 3x" alt="Reviewer's avatar" title="Reviewer's avatar" width="70px" height="70px">
-                        <h3 class="review__name">
+                        <img class="review__avatar src=" images/reviewer.jpg " srcset="images/reviewer.jpg 1x, images/reviewer@2x.jpg 2x, images/reviewer@3x.jpg 3x " alt="Reviewer 's avatar" title="Reviewer's avatar " width="70px " height="70px ">
+                        <h3 class="review__name ">
                             Rafał Miodowski
                         </h3>
                     </div>
                 </div>
             </section>
-            <section class="contact container">
-                <h2 class="section-title">
+            <section class="contact container ">
+                <h2 class="section-title ">
                     Feel free to contact us!
                 </h2>
-                <div class="main-form">
-                    <form action="">
-                        <div class="form-row">
-                            <div class="form-col">
-                                <label for="name">Your name:</label>
-                                <input name="name" type="text" id="name" value="">
+                <div class="main-form ">
+                    <form action=" ">
+                        <div class="form-row ">
+                            <div class="form-col ">
+                                <label for="name ">Your name:</label>
+                                <input name="name " type="text " id="name " value=" ">
                             </div>
-                            <div class="form-col">
-                                <label for="email">Your email:</label>
-                                <input name="email" type="email" id="email" value="">
+                            <div class="form-col ">
+                                <label for="email ">Your email:</label>
+                                <input name="email " type="email " id="email " value=" ">
                             </div>
                         </div>
-                        <div class="form-row">
-                            <textarea name="message" placeholder="message"></textarea>
+                        <div class="form-row ">
+                            <textarea name="message " placeholder="message "></textarea>
                         </div>
-                        <div class="form-row">
-                            <input type="submit" value="Submit">
+                        <div class="form-row ">
+                            <input type="submit " value="Submit ">
                         </div>
                     </form>
-                    <div class="vcard">
-                        <p class="cn"><a class="url" href="#">U<sup>VR</sup> headquarters</a>
+                    <div class="vcard ">
+                        <p class="cn "><a class="url " href="# ">U<sup>VR</sup> headquarters</a>
                             <p>
-                                <p class="adr">
-                                    <span class="street-address">Random Street</span>
+                                <p class="adr ">
+                                    <span class="street-address ">Random Street</span>
                                     <br>
-                                    <span class="region">Virtualville</span>
+                                    <span class="region ">Virtualville</span>
                                     <br>
-                                    <span class="postal-code">00-000</span>
+                                    <span class="postal-code ">00-000</span>
                                     <br>
-                                    <span class="country-name">Poland</span>
+                                    <span class="country-name ">Poland</span>
                                 </p>
-                                <p class="tel">+48 000 000 000</p>
-                                <p class="mail">rafalmiodowski@gmail.com</p>
+                                <p class="tel ">+48 000 000 000</p>
+                                <p class="mail ">rafalmiodowski@gmail.com</p>
                             </p>
                     </div>
                 </div>
@@ -187,7 +192,7 @@
         </footer>
     </div>
     <script>
-    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    document.write('<script src="http:// ' + (location.host || 'localhost ').split(': ')[0] + ':35729/livereload.js?snipver=1 "></' + 'script>')
     </script>
 </body>
 
