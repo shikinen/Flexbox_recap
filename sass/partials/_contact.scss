@@ -1,17 +1,73 @@
+.main-form {
+    @media #{$tablet} {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        &>* {
+            flex-basis: 47%;
+        }
+    }
+}
+
+form {
+    margin-bottom: 2rem;
+    @media #{$tablet} {
+        margin-bottom: 0;
+    }
+}
+
+input:not(.button),
 textarea {
-	resize: none;
+    border: 2px solid $megalight;
+    border-radius: 5px;
+    font-size: inherit;
+    font-family: $main-font;
+    @media #{$tablet} {
+        max-width: 25rem;
+    }
+    outline: none;
+    padding: .75rem .5rem;
+    transition: border-color ease-in-out .3s,
+    box-shadow ease-in-out .3s;
+    &:focus {
+        border-color: $aqua;
+        box-shadow: 0 0 5px $aqua;
+    }
+}
+
+::placeholder {
+    color: $light;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__name {
+    margin-bottom: 1rem;
+}
+
+.submit {
+    font-size: inherit;
+}
+
+textarea {
+    height: 5rem;
+    margin: 1rem 0 2rem 0;
+    resize: none;
 }
 
 .vcard {
-	background-color: $aqua;
-	color: $violet;
-	padding: 2.5rem;
-	&>*:not(.cn) {
-		margin-top: 1rem;
-	}
+    background-color: $aqua;
+    color: $violet;
+    padding: 2.5rem;
+    &>*:not(.cn) {
+        margin-top: 1rem;
+    }
 }
 
 .cn {
-	font-size: 2rem;
-	font-weight: $semibold;
+    font-size: 2rem;
+    font-weight: $semibold;
 }
