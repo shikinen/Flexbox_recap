@@ -68,6 +68,9 @@ textarea {
 }
 
 .cn {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    @media #{$tablet} {
+        2rem;
+    }
     font-weight: $semibold;
 }
