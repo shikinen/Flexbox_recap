@@ -26,6 +26,10 @@ a {
     color: currentColor;
     cursor: pointer;
     text-decoration: none;
+    transition: .3s all ease-in-out;
+    &:hover {
+        color: $aqua;
+    }
 }
 
 h1,
