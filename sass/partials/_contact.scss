@@ -1,0 +1,17 @@
+textarea {
+	resize: none;
+}
+
+.vcard {
+	background-color: $aqua;
+	color: $violet;
+	padding: 2.5rem;
+	&>*:not(.cn) {
+		margin-top: 1rem;
+	}
+}
+
+.cn {
+	font-size: 2rem;
+	font-weight: $semibold;
+}
