@@ -31,7 +31,7 @@
 .product__information {
     margin-top: 1.5rem;
     order: 1;
-    &>* {
+    >* {
         margin-bottom: 1rem;
     }
 }

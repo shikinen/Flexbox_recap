@@ -3,7 +3,7 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
-        &>* {
+        >* {
             flex-basis: 47%;
         }
     }
@@ -68,7 +68,7 @@ textarea {
     background-color: $aqua;
     color: $violet;
     padding: 2.5rem;
-    &>*:not(.cn) {
+    >*:not(.cn) {
         margin-top: 1rem;
     }
 }
