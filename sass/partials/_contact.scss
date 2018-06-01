@@ -16,6 +16,11 @@ form {
     }
 }
 
+input,
+textarea {
+    box-shadow: none;
+}
+
 input:not(.button),
 textarea {
     border: 2px solid $megalight;

@@ -7,7 +7,7 @@ const sassOptions = {
 };
 
 const input = 'sass/**/*.scss';
-const output = 'css/';
+const output = '../build/css/';
 
 gulp.task('sass', function () {
     return gulp
